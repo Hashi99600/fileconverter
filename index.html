@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!-- SEO TITLE -->
+    <title>FileConverter — Fast Online File Tools</title>
+
+<meta
+    name="description"
+    content="Fast browser-based file conversion and image tools. Convert, compress, resize and transform files online."
+>
+
+    <!-- SEO KEYWORDS -->
+    <meta
+        name="keywords"
+        content="file converter, online file converter, PDF converter, PDF tools, image converter, document converter, compress PDF, compress image, free file converter"
+    >
+
+    <meta
+        name="author"
+        content="FileConverter"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <!-- CANONICAL URL -->
+    <!-- Replace this with your real domain after publishing -->
+    <link
+        rel="canonical"
+        href="https://yourdomain.com/"
+    >
+
+    <!-- FAVICON -->
+    <link
+        rel="icon"
+        href="favicon.png"
+        type="image/png"
+    >
+
+    <!-- APP / MOBILE -->
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <!-- OPEN GRAPH -->
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:title"
+        content="FileConverter — Free Online File Converter"
+    >
+
+    <meta
+        property="og:description"
+        content="Convert, compress, resize and transform your files online with easy-to-use FileConverter tools."
+    >
+
+    <meta
+        property="og:url"
+        content="https://yourdomain.com/"
+    >
+
+    <meta
+        property="og:site_name"
+        content="FileConverter"
+    >
+
+    <!-- TWITTER / X -->
+    <meta
+        name="twitter:card"
+        content="summary"
+    >
+
+    <meta
+        name="twitter:title"
+        content="FileConverter — Free Online File Converter"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Free online tools for converting, compressing and transforming PDF, images and documents."
+    >
+
+    <!-- STYLESHEET -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- =====================================================
+         PDF.JS
+    ====================================================== -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+    <script>
+
+        window.addEventListener("DOMContentLoaded", function () {
+
+            if (window.pdfjsLib) {
+
+                window.pdfjsLib.GlobalWorkerOptions.workerSrc =
+                    "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+            }
+
+        });
+
+    </script>
+
+
+    <!-- =====================================================
+         JSZIP
+    ====================================================== -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+
+    <!-- =====================================================
+         PDF-LIB
+    ====================================================== -->
+
+    <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+
+
+    <!-- =====================================================
+         SHEETJS
+    ====================================================== -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+
+    <!-- =====================================================
+         MAMMOTH
+    ====================================================== -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.8.0/mammoth.browser.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="container nav">
+
+        <a
+            class="logo"
+            href="#"
+            aria-label="FileConverter Home"
+        >
+
+            <span class="logo-mark">
+                ↻
+            </span>
+
+            <span>
+                File<span>Converter</span>
+            </span>
+
+        </a>
+
+
+        <nav id="nav" aria-label="Main navigation">
+
+            <a href="#tools">
+                Tools
+            </a>
+
+            <a href="#features">
+                Features
+            </a>
+
+            <a href="#faq">
+                FAQ
+            </a>
+
+        </nav>
+
+
+        <button
+            id="menuBtn"
+            class="menu-btn"
+            type="button"
+            aria-label="Open navigation menu"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+    <div class="container hero-inner">
+
+        <div class="badge">
+
+            ✦ Fast
+            &nbsp; • &nbsp;
+            Private
+            &nbsp; • &nbsp;
+            Browser Based
+
+        </div>
+
+
+        <h1>
+
+            Free Online
+            <span>
+                File Converter
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Convert, compress, resize and transform PDF,
+            images and documents with powerful online tools.
+
+        </p>
+
+
+        <div class="search-box">
+
+            <span>
+                ⌕
+            </span>
+
+            <input
+                id="searchInput"
+                type="search"
+                placeholder="Search a tool..."
+                autocomplete="off"
+                aria-label="Search tools"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TOOLS
+===================================================== -->
+
+<section
+    id="tools"
+    class="tools-section"
+>
+
+    <div class="container">
+
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="eyebrow">
+                    ONLINE FILE TOOLS
+                </span>
+
+                <h2>
+                    Free File Conversion Tools
+                </h2>
+
+                <p>
+                    Simple tools for everyday PDF, image and
+                    document tasks.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CATEGORIES -->
+
+        <div class="categories">
+
+            <button
+                class="category active"
+                data-category="all"
+                type="button"
+            >
+                All
+            </button>
+
+
+            <button
+                class="category"
+                data-category="pdf"
+                type="button"
+            >
+                PDF
+            </button>
+
+
+            <button
+                class="category"
+                data-category="image"
+                type="button"
+            >
+                Image
+            </button>
+
+
+            <button
+                class="category"
+                data-category="document"
+                type="button"
+            >
+                Documents
+            </button>
+
+        </div>
+
+
+        <!-- TOOLS GENERATED BY JS -->
+
+        <div
+            id="toolsGrid"
+            class="tools-grid"
+        ></div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     WORKSPACE
+===================================================== -->
+
+<section
+    id="workspace"
+    class="workspace hidden"
+    aria-label="File conversion workspace"
+>
+
+    <div class="container">
+
+        <div class="workspace-card">
+
+
+            <div class="workspace-top">
+
+                <div>
+
+                    <span
+                        id="workspaceIcon"
+                        class="workspace-icon"
+                    >
+                        ⚡
+                    </span>
+
+
+                    <div>
+
+                        <h2 id="workspaceTitle">
+                            Select a tool
+                        </h2>
+
+
+                        <p id="workspaceDescription">
+                            Choose your file to begin.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="closeBtn"
+                    class="close-btn"
+                    type="button"
+                    aria-label="Close workspace"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- DROP ZONE -->
+
+            <div
+                id="dropZone"
+                class="drop-zone"
+            >
+
+                <div class="upload-symbol">
+                    ↑
+                </div>
+
+
+                <h3>
+                    Drop your file here
+                </h3>
+
+
+                <p>
+                    or choose a file from your device
+                </p>
+
+
+                <button
+                    id="chooseBtn"
+                    class="primary-btn"
+                    type="button"
+                >
+                    Choose File
+                </button>
+
+
+                <input
+                    id="fileInput"
+                    type="file"
+                    hidden
+                >
+
+
+                <small id="fileTypes">
+                    Supported files
+                </small>
+
+            </div>
+
+
+            <!-- SELECTED FILES -->
+
+            <div
+                id="fileList"
+                class="file-list"
+            ></div>
+
+
+            <!-- OPTIONS -->
+
+            <div
+                id="options"
+                class="options"
+            ></div>
+
+
+            <!-- START BUTTON -->
+
+            <button
+                id="startBtn"
+                class="convert-btn"
+                type="button"
+                disabled
+            >
+                Start Conversion
+            </button>
+
+
+            <!-- PROGRESS -->
+
+            <div
+                id="progressBox"
+                class="progress-box hidden"
+            >
+
+                <div class="progress-info">
+
+                    <span id="progressText">
+                        Preparing...
+                    </span>
+
+
+                    <strong id="progressPercent">
+                        0%
+                    </strong>
+
+                </div>
+
+
+                <div class="progress-track">
+
+                    <div
+                        id="progressBar"
+                        style="width: 0%"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESULT -->
+
+            <div
+                id="resultBox"
+                class="result-box hidden"
+            >
+
+                <div class="success-icon">
+                    ✓
+                </div>
+
+
+                <h3 id="resultTitle">
+                    Your file is ready
+                </h3>
+
+
+                <p id="resultMessage">
+                </p>
+
+
+                <a
+                    id="downloadBtn"
+                    class="download-btn"
+                    href="#"
+                    download
+                >
+                    Download File
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FEATURES
+===================================================== -->
+
+<section
+    id="features"
+    class="features"
+>
+
+    <div class="container">
+
+
+        <div class="section-head center">
+
+            <span class="eyebrow">
+                WHY FILECONVERTER
+            </span>
+
+
+            <h2>
+                Simple, Fast & Easy File Tools
+            </h2>
+
+
+            <p>
+                Powerful online tools without complicated software.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+
+            <article>
+
+                <div>
+                    ⚡
+                </div>
+
+                <h3>
+                    Fast
+                </h3>
+
+                <p>
+                    Supported files can be processed directly
+                    in your browser.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <div>
+                    🔒
+                </div>
+
+                <h3>
+                    Private
+                </h3>
+
+                <p>
+                    Browser-based processing can keep supported
+                    files on your device.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <div>
+                    📱
+                </div>
+
+                <h3>
+                    Every Device
+                </h3>
+
+                <p>
+                    Designed for phones, tablets and computers.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section
+    id="faq"
+    class="faq"
+>
+
+    <div class="container">
+
+
+        <div class="section-head center">
+
+            <span class="eyebrow">
+                FAQ
+            </span>
+
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+        </div>
+
+
+        <div class="faq-list">
+
+
+            <details>
+
+                <summary>
+                    What is FileConverter?
+                </summary>
+
+                <p>
+                    FileConverter is an online platform that
+                    provides tools for converting, compressing,
+                    resizing and transforming files.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Do I need to install software?
+                </summary>
+
+                <p>
+                    No. Supported browser-based tools work
+                    directly in your web browser.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Can I use FileConverter on mobile?
+                </summary>
+
+                <p>
+                    Yes. FileConverter is designed to work on
+                    phones, tablets and desktop computers.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Are files uploaded to a server?
+                </summary>
+
+                <p>
+                    Tools that use browser-based processing can
+                    process supported files locally on your device.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Is FileConverter free?
+                </summary>
+
+                <p>
+                    The browser-based tools available on the
+                    website can be used without installing
+                    additional software.
+                </p>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+
+        <div class="logo">
+
+            <span class="logo-mark">
+                ↻
+            </span>
+
+            FileConverter
+
+        </div>
+
+
+        <p>
+
+            ©
+            <span id="year"></span>
+            FileConverter
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     MAIN JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
